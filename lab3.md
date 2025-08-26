@@ -13,7 +13,7 @@ We will be walking thourgh basic linux terminal commands
    ### 📌 Output example:
     /home/HPVICTUS/Deskstop/vg/linux_lab
 
-   ![alt text](img2.png)
+   ![alt text](images/img2.png)
 
 
 ## `ls` – List Directory Contents
@@ -26,7 +26,7 @@ We will be walking thourgh basic linux terminal commands
     ls -a → Shows hidden files (those starting with .)
     ls -la → Combined
 
-![alt text](img1.png)
+![alt text](images/img1.png)
 
 ## `cd` – Change Directory
    Moves into a directory.
@@ -41,7 +41,8 @@ We will be walking thourgh basic linux terminal commands
       cd ..               # Go up one level
       cd /                # Go to root
       cd ~                # Go to home directory
-  ![to](img3.png)
+
+![alt text](images/img3.png)
 
 # ✅ 2. File and Directory Management
 
@@ -73,7 +74,7 @@ rm -r folder_name    # Delete folder (recursively)
 ```
 ## ⚠️ Be careful! There is no undo.
 
-![alt text](img4.png)
+![alt text](images/img4.png)
 
 # ✅ 3. File Viewing & Editing
 
@@ -91,7 +92,7 @@ nano file.txt
     CTRL + O to save
     CTRL + X to exit
 
-  ![alt text](img5.png)
+![alt text](images/img5.png)
 
 ## `clear` – Clears the Terminal
 ```
