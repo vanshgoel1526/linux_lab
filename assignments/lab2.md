@@ -1,6 +1,6 @@
-# understanding how existing scripts in repo work
+# 🔧understanding how existing scripts in repo work
 
-# script 1
+# 🔧script 1
 
   ```
  #!/bin/bash      - shebang
@@ -13,7 +13,7 @@
 ![alt text](../images/img36.png)
 
 ![alt text](../images/img37.png)
-# script 2
+# 🔧 script 2
 
 ```
 #!/bin/bash        -shebang
@@ -34,11 +34,11 @@ fi
 ![alt text](../images/img39.png)
 
 
-### Q1 what is the purpose of #!/bin/bash at the top of the script
+### 🔧 Q1 what is the purpose of #!/bin/bash at the top of the script
 
     ans= the shebang line at the top of a script specifies the interpreter that should be used to the run the script.
 
-### Q2 how do you make a script executable?
+### 🔧 Q2 how do you make a script executable?
     ans = 1. add the shebang at the top
           2. give permission using the chmod command
           3. run the code.

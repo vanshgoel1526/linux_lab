@@ -1,4 +1,4 @@
-We will be walking thourgh basic linux terminal commands
+# 📌 We will be walking thourgh basic linux terminal commands
 
 
 # ✅ 1. Navigation Commands
@@ -11,18 +11,17 @@ We will be walking thourgh basic linux terminal commands
    ### 📌 Output example:
     /home/HPVICTUS/Deskstop/vg/linux_lab
 
-   ![alt text](../images/img2.png)
+   ![alt text](../images/img2.png)📌
 
 
 ## `ls` – List Directory Contents
-  Lists files and folders in the current directory.
-  ```
-  ls
+  The ls command is used to list files and directories in the current working directory. flag-a list down all the file and folder including the one which are hidden
   ```
   
     ls -l → Detailed list (permissions, size, date)
     ls -a → Shows hidden files (those starting with .)
     ls -la → Combined
+```
 
 ![alt text](../images/img1.png)
 
@@ -90,7 +89,7 @@ nano file.txt
     CTRL + O to save
     CTRL + X to exit
 
-![alt text](../images/img5.png)
+![alt text](../images/img49.png)
 
 ## `clear` – Clears the Terminal
 ```
@@ -115,7 +114,7 @@ echo "Hello, World!"
 ```bash
 whoami
 ```
-
+![alt text](../images/img50.png)
 ---
 
 ### `man` – Manual for Any Command
@@ -145,6 +144,7 @@ find . -name "*.txt"
 ```bash
 grep "hello" file.txt
 ```
+![alt text](../images/img51.png)
 
 🔍 Searches for the word `hello` inside `file.txt`.
 
@@ -297,9 +297,83 @@ chown [options] new_owner:new_group filename
 ```bash
 chown vanshgoel.txt          # Change owner to user 'sameer'
 chown vansh:dev.txt       # Change owner to 'sameer' and group to 'dev'
-chown :dev file.txt            # Change only group to 'dev'
-chown -R sameer:dev /project    # Recursive ownership change
+chown vansh:dev file.txt            # Change only group to 'dev'
+chown -R vansh :dev /project    # Recursive ownership change
 ```
+# **Practice Experiment on `chown`**
+
+### 🔹 1. Create a new user
+
+```bash
+sudo useradd -m newuser
+```
+
+* `-m` → creates a home directory `/home/newuser`.
+
+---
+
+### 🔹 2. Create a new group
+
+```bash
+sudo groupadd newgroup
+```
+
+---
+
+### 🔹 3. Add the user to the group
+
+```bash
+sudo usermod -aG newgroup newuser
+```
+
+* `-aG` → append user to the supplementary group (doesn’t remove existing groups).
+
+---
+
+### 🔹 4. Create a file (as current user, e.g. root or your login user)
+
+```bash
+touch testfile.txt
+```
+
+Check ownership:
+
+```bash
+ls -l testfile.txt
+```
+
+Example:
+
+```
+-rw-rw-r--1 sameerbhardwaj sameerbhardwaj 0 Aug 20 18:52 testfile.txt
+```
+
+---
+
+### 🔹 5. Assign ownership of the file to `newuser` and `newgroup`
+
+```bash
+sudo chown newuser:newgroup testfile.txt
+```
+
+---
+
+### 🔹 6. Verify ownership
+
+```bash
+ls -l testfile.txt
+```
+
+**Output:**
+
+```
+-rw-rw-r--1 newuser newgroup 0 Aug 20 18:52 testfile.txt
+```
+---
+
+✅ **Key Tip**: Use **numeric for quick settings** (e.g., 755, 644) and **symbolic for fine adjustments** (`u+x`, `g-w`).
+
+![alt text](../images/img52.png)
 
 ---
 
@@ -342,17 +416,13 @@ chown root:admin project.sh # Change owner to root and group to admin
 | 7       | rwx        | Full access  |
 
 ---
-
-✅ **Key Tip**: Use **numeric for quick settings** (e.g., 755, 644) and **symbolic for fine adjustments** (`u+x`, `g-w`).
-
----
-### Q1 what is the difference between chmod and chown?
+### 📌 Q1 what is the difference between chmod and chown?
     ans=chown-change ownership
          change the owner and group of a file or directory
         
         chmod-change permissions
          changes the permissions for the owner,group, and others
         
-### Q2 how do you check current directory and user?
+### 📌 Q2 how do you check current directory and user?
 
       ans= by using the pwd command.
