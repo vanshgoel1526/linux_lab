@@ -1,50 +1,49 @@
 # modifying script
-
-## original script
-
-```
-#!/bin/bash        ---shebang
-a="vansh"           ---taking vansh in the variable a
-b=40                 ---taking 40 in the variable b
-
-if [ $a="vansh" ] && [ $b -gt 18 ]; then      ---checking conditions and using an opreator and(&&)
-    echo " you are adult "                     ---printing you are adult
-fi
-
-if [ $a=" akshat" ] && [ $b -lt 18 ]; then       ---checking conditions and using an opreator and(&&)
-    echo "you are minor"                         --- printing you are minor
-fi
-
-```
-![alt text](../images/img38.png)
-
-![alt text](../images/img39.png)
-
-##  modified script
-
-```
-#!/bin/bash 
-# prompt user for input
-
-read -p "enter your name: " name      --- taking name from the user
-read -p "enter your age: " age        --- taking age from the user
-
-if [ $name="vansh" ] && [ $age -gt 18 ]; then    --- checking conditions with if and opreator and(&&)     
-    echo " you are adult "                     --- printing (you are adult)
-fi
-
-if [ $name=" akshat" ] && [ $age -lt 18 ]; then  ----  checking conditions with if and opreator and(&&)      
-    echo "you are minor"                         ---- printing (you are minor)
-fi
-```
-## the difference between the original and modified script is that in the first one we check for fixed value and in the next case we check for all cases .
+# ✅ Script: printnumers.sh
+![alt text](../images/img53.png)
 
 
-![alt text](../images/img41.png)
+### Make it executable and example run:
+![alt text](../images/img54.png)
 
-## checking with differnt examples
+## Modified Script (⁠ enhanced_numbers.sh ⁠)
+ 
+ ![alt text](../images/img55.png)
 
-![alt text](../images/img40.png)
+
+1 Validate number of arguments
+
+
+2  Validate that start, end, and step are integers
+
+
+3 Determine direction based on start and end
+
+
+### ⁠Purpose: 
+
+.Print numbers with user-defined start, end, and step.
+
+•  ⁠Input: User enters values at runtime.
+
+
+•⁠  ⁠Validation:
+•⁠  ⁠Step must be a positive integer.
+•⁠  ⁠Inputs must be integers.
+•⁠  ⁠Output: Prints sequence based on user choices.
+
+### Example Runs
+
+Example1
+
+
+Example2
+
+
+
+
+
+
 
 ### Q1=differnce between $1,$@ and $# in bash?
 

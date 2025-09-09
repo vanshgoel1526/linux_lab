@@ -77,7 +77,7 @@ Files copied into ⁠ backup/ ⁠ with timestamps:
 ### 🛠️ Q1-What is the difference between cp,mv,and rsync?
 
      ans=cp-Copies files or directories
-         rm-Moves or renames files or directories
+         mv-Moves or renames files or directories
          rsync-Synchronizes files/directories efficiently
 
 
