@@ -1,15 +1,18 @@
-# modifying script
+# 📌 modifying script
+
+
 # ✅ Script: printnumers.sh
 ![alt text](../images/img53.png)
 
 
-### Make it executable and example run:
+### 📌 Make it executable and example run:
 ![alt text](../images/img54.png)
 
-## Modified Script (⁠ enhanced_numbers.sh ⁠)
+## 📌 Modified Script (⁠ enhanced_numbers.sh ⁠)
  
- ![alt text](../images/img55.png)
+ ![alt text](../images/img57.png)
 
+# 📌 expalnation
 
 1 Validate number of arguments
 
@@ -20,7 +23,7 @@
 3 Determine direction based on start and end
 
 
-### ⁠Purpose: 
+### 📌 ⁠Purpose: 
 
 .Print numbers with user-defined start, end, and step.
 
@@ -32,25 +35,29 @@
 •⁠  ⁠Inputs must be integers.
 •⁠  ⁠Output: Prints sequence based on user choices.
 
-### Example Runs
+### 📌 Example Runs
 
 Example1
+
+![alt text](../images/img56.png)
 
 
 Example2
 
+![alt text](../images/img58.png)
 
 
 
 
 
 
-### Q1=differnce between $1,$@ and $# in bash?
+
+### 📌 Q1=differnce between $1,$@ and $# in bash?
 
     ans= $1= this refers to positional parameters
          $@= represents all arguments passed to the script
          $#= returns the number of arguments passed
 
-### Q2=what does exit 1 mean in the script
+### 📌 Q2=what does exit 1 mean in the script
     
      ans=script is terminating with an error
