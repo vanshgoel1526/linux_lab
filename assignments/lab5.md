@@ -54,13 +54,13 @@ bash starter_kit.sh"
 
 ### 🔧 Q1 Why is automation useful in DevoPs?
 
-    ans=1.Consistency and reliability
+    ans=📌1.Consistency and reliability
 
-        2.Speed and efficiency
+        📌2.Speed and efficiency
 
-        3.Scalability
+        📌3.Scalability
 
-        4.Reduced Human Error 
+        📌 4.Reduced Human Error 
 
 ### 🔧 Q2 what does mkdir -p do?
 
