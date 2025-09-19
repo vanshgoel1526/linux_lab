@@ -1,5 +1,3 @@
-
-
 #!/bin/bash
 # check_file.sh
 # Usage: ./check_file.sh filename.txt
