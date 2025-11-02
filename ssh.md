@@ -108,6 +108,10 @@ sudo chown -R frienduser:frienduser /home/frienduser/.ssh
 
 
 ```
+
+![alt text](images/img78.jpeg)
+
+![alt text](images/img79.jpeg)
 Verify sshd is running:
 ```
 sudo systemctl status ssh --no-pager
@@ -132,6 +136,7 @@ ssh -p 22 -X frienduser@FRIEND_IP
 # once connected, run a simple GUI test:
 xeyes &    # or gedit & or xclock &
 ```
+![alt text](images/img76.png)
 Success criteria: the GUI app window appears on your laptop and is responsive.
 
 Troubleshooting quick checks:
@@ -153,6 +158,7 @@ On friend’s laptop (as frienduser):
 vncserver :1
 # optionally stop with: vncserver -kill :1
 ```
+![alt text](images/img77.jpeg)
 (Configure desktop environment in ~/.vnc/xstartup if needed — many distros auto-configure.)
 
 On your laptop: create a local SSH tunnel (keeps VNC server bound to localhost on remote; only SSH port open externally)
@@ -163,6 +169,8 @@ ssh -L 5901:localhost:5901 -p 22 frienduser@FRIEND_IP -N &
 # -N = no remote command; & runs in background (adjust as preferred)
 ```
 Then open your VNC viewer and connect to:
+
+![alt text](images/img75.png)
 
 ```
 localhost:5901
